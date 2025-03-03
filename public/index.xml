@@ -1,11 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>FAQ</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content on FAQ</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>General FAQs</title>
+      <link>http://localhost:1313/general/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/general/</guid>
+      <description>&lt;details&gt;&#xA;  &lt;summary&gt;What is the company about?&lt;/summary&gt;&#xA;  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a risus eget erat porttitor posuere. Vivamus imperdiet purus sit amet pulvinar lacinia. Donec ornare ipsum tellus, quis sodales turpis semper finibus. Ut pretium magna id nunc auctor, iaculis ullamcorper felis gravida. Aliquam vitae dapibus lacus, at condimentum diam.&lt;/p&gt;&#xA;&lt;/details&gt;&#xA;&#xA;&#xA;&lt;details&gt;&#xA;  &lt;summary&gt;How do I get started with the company?&lt;/summary&gt;&#xA;  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a risus eget erat porttitor posuere. Vivamus imperdiet purus sit amet pulvinar lacinia. Donec ornare ipsum tellus, quis sodales turpis semper finibus. Ut pretium magna id nunc auctor, iaculis ullamcorper felis gravida. Aliquam vitae dapibus lacus, at condimentum diam.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Order-Related FAQs</title>
+      <link>http://localhost:1313/order-related/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/order-related/</guid>
+      <description>&lt;details&gt;&#xA;  &lt;summary&gt;How do I place an order?&lt;/summary&gt;&#xA;  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a risus eget erat porttitor posuere. Vivamus imperdiet purus sit amet pulvinar lacinia. Donec ornare ipsum tellus, quis sodales turpis semper finibus. Ut pretium magna id nunc auctor, iaculis ullamcorper felis gravida. Aliquam vitae dapibus lacus, at condimentum diam.&lt;/p&gt;&#xA;&lt;/details&gt;&#xA;&#xA;&#xA;&lt;details&gt;&#xA;  &lt;summary&gt;What payment methods do you accept?&lt;/summary&gt;&#xA;  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a risus eget erat porttitor posuere. Vivamus imperdiet purus sit amet pulvinar lacinia. Donec ornare ipsum tellus, quis sodales turpis semper finibus. Ut pretium magna id nunc auctor, iaculis ullamcorper felis gravida. Aliquam vitae dapibus lacus, at condimentum diam.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>http://localhost:1313/security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/security/</guid>
+      <description>&lt;details&gt;&#xA;  &lt;summary&gt;What is your privacy policy?&lt;/summary&gt;&#xA;  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a risus eget erat porttitor posuere. Vivamus imperdiet purus sit amet pulvinar lacinia. Donec ornare ipsum tellus, quis sodales turpis semper finibus. Ut pretium magna id nunc auctor, iaculis ullamcorper felis gravida. Aliquam vitae dapibus lacus, at condimentum diam.&lt;/p&gt;&#xA;&lt;/details&gt;&#xA;&#xA;&#xA;&lt;details&gt;&#xA;  &lt;summary&gt;Can I delete my account permanently?&lt;/summary&gt;&#xA;  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a risus eget erat porttitor posuere. Vivamus imperdiet purus sit amet pulvinar lacinia. Donec ornare ipsum tellus, quis sodales turpis semper finibus. Ut pretium magna id nunc auctor, iaculis ullamcorper felis gravida. Aliquam vitae dapibus lacus, at condimentum diam.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Technical FAQs</title>
+      <link>http://localhost:1313/technical/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/technical/</guid>
+      <description>&lt;details&gt;&#xA;  &lt;summary&gt;How do I reset my password?&lt;/summary&gt;&#xA;  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a risus eget erat porttitor posuere. Vivamus imperdiet purus sit amet pulvinar lacinia. Donec ornare ipsum tellus, quis sodales turpis semper finibus. Ut pretium magna id nunc auctor, iaculis ullamcorper felis gravida. Aliquam vitae dapibus lacus, at condimentum diam.&lt;/p&gt;&#xA;&lt;/details&gt;&#xA;&#xA;&#xA;&lt;details&gt;&#xA;  &lt;summary&gt;Why am I experiencing login issues?&lt;/summary&gt;&#xA;  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a risus eget erat porttitor posuere. Vivamus imperdiet purus sit amet pulvinar lacinia. Donec ornare ipsum tellus, quis sodales turpis semper finibus. Ut pretium magna id nunc auctor, iaculis ullamcorper felis gravida. Aliquam vitae dapibus lacus, at condimentum diam.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
