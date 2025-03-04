@@ -1,27 +1,22 @@
 {{ define "main"}}
 
-<div class="list">
-    <div class="mainTitle">
-        <h1>
-            Frequently Asked Questions
+<div class="p-20">
+    <div>
+        <h1 class="text-5xl font-bold font-sans text-black flex justify-center">
+            FAQs
         </h1>
+        <p class="text-lg font-sans text-gray-500 flex justify-center mb-10">Here are some frequently asked questions
+        </p>
     </div>
     {{ range .Paginator.Pages}}
-    <div class="listItem">
-        <h2>
+    <div class="ml-50">
+        <h2
+            class="flex content-center gap-3 mb-5 hover:text-amber-700 text-xl transition-transform duration-300 hover:translate-y-1">
             <a href="{{ .Permalink }}">{{ .Title }}
-                <svg fill="#ffffff" viewBox="0 0 32 32" width="20" height="15" xmlns="http://www.w3.org/2000/svg"
-                    stroke="#ffffff">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <path d="M18.629 15.997l-7.083-7.081L13.462 7l8.997 8.997L13.457 25l-1.916-1.916z"></path>
-                    </g>
-                </svg>
             </a>
         </h2>
+        <hr class="mt-5 mb-6 w-42">
     </div>
     {{end}}
 </div>
-
 {{ end }}
