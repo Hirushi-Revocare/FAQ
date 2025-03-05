@@ -8,12 +8,12 @@
   </url><url>
     <loc>http://localhost:1313/general/</loc>
   </url><url>
+    <loc>http://localhost:1313/lead-management/</loc>
+  </url><url>
     <loc>http://localhost:1313/order-related/</loc>
   </url><url>
     <loc>http://localhost:1313/security/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-  </url><url>
-    <loc>http://localhost:1313/technical/</loc>
   </url>
 </urlset>

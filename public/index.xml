@@ -15,6 +15,13 @@
       <description>&lt;details&gt;&#xA;  &lt;summary&gt;What is the company about?&lt;/summary&gt;&#xA;  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a risus eget erat porttitor posuere. Vivamus imperdiet purus sit amet pulvinar lacinia. Donec ornare ipsum tellus, quis sodales turpis semper finibus. Ut pretium magna id nunc auctor, iaculis ullamcorper felis gravida. Aliquam vitae dapibus lacus, at condimentum diam.&lt;/p&gt;&#xA;&lt;/details&gt;&#xA;&#xA;&#xA;&lt;details&gt;&#xA;  &lt;summary&gt;How do I get started with the company?&lt;/summary&gt;&#xA;  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a risus eget erat porttitor posuere. Vivamus imperdiet purus sit amet pulvinar lacinia. Donec ornare ipsum tellus, quis sodales turpis semper finibus. Ut pretium magna id nunc auctor, iaculis ullamcorper felis gravida. Aliquam vitae dapibus lacus, at condimentum diam.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Lead Management Platform FAQs</title>
+      <link>http://localhost:1313/lead-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/lead-management/</guid>
+      <description>&lt;details&gt;&#xA;  &lt;summary&gt;What file formats can I use to upload leads?&lt;/summary&gt;&#xA;  &lt;p&gt;You can upload leads using Excel (.xlsx or .xls) files. Ensure your file is properly formatted with the required columns.&lt;/p&gt;&#xA;&lt;/details&gt;&#xA;&#xA;&#xA;&lt;details&gt;&#xA;  &lt;summary&gt;What columns are required in my Excel file?&lt;/summary&gt;&#xA;  &lt;p&gt;You can easily download a sample template by clicking the &amp;ldquo;Excel&amp;rdquo; button, which provides a pre-formatted spreadsheet with all required columns.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/faq1.png&#34; &#xA;alt=&#34;Your Image&#34; &#xA;loading=&#34;lazy&#34; &#xA;width=&#34;600&#34; /&gt;&lt;/p&gt;&#xA;&lt;/details&gt;&#xA;&#xA;&#xA;&lt;details&gt;&#xA;  &lt;summary&gt;How often should I update my leads?&lt;/summary&gt;&#xA;  &lt;p&gt;We recommend updating your leads when you have accumulated 500 new or modified lead records.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Order-Related FAQs</title>
       <link>http://localhost:1313/order-related/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -27,13 +34,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/security/</guid>
       <description>&lt;details&gt;&#xA;  &lt;summary&gt;What is your privacy policy?&lt;/summary&gt;&#xA;  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a risus eget erat porttitor posuere. Vivamus imperdiet purus sit amet pulvinar lacinia. Donec ornare ipsum tellus, quis sodales turpis semper finibus. Ut pretium magna id nunc auctor, iaculis ullamcorper felis gravida. Aliquam vitae dapibus lacus, at condimentum diam.&lt;/p&gt;&#xA;&lt;/details&gt;&#xA;&#xA;&#xA;&lt;details&gt;&#xA;  &lt;summary&gt;Can I delete my account permanently?&lt;/summary&gt;&#xA;  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a risus eget erat porttitor posuere. Vivamus imperdiet purus sit amet pulvinar lacinia. Donec ornare ipsum tellus, quis sodales turpis semper finibus. Ut pretium magna id nunc auctor, iaculis ullamcorper felis gravida. Aliquam vitae dapibus lacus, at condimentum diam.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Technical FAQs</title>
-      <link>http://localhost:1313/technical/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/technical/</guid>
-      <description>&lt;details&gt;&#xA;  &lt;summary&gt;How do I reset my password?&lt;/summary&gt;&#xA;  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a risus eget erat porttitor posuere. Vivamus imperdiet purus sit amet pulvinar lacinia. Donec ornare ipsum tellus, quis sodales turpis semper finibus. Ut pretium magna id nunc auctor, iaculis ullamcorper felis gravida. Aliquam vitae dapibus lacus, at condimentum diam.&lt;/p&gt;&#xA;&lt;/details&gt;&#xA;&#xA;&#xA;&lt;details&gt;&#xA;  &lt;summary&gt;Why am I experiencing login issues?&lt;/summary&gt;&#xA;  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a risus eget erat porttitor posuere. Vivamus imperdiet purus sit amet pulvinar lacinia. Donec ornare ipsum tellus, quis sodales turpis semper finibus. Ut pretium magna id nunc auctor, iaculis ullamcorper felis gravida. Aliquam vitae dapibus lacus, at condimentum diam.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

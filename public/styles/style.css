@@ -1,6 +1,3 @@
-
-
-
 details > summary { 
     font-weight: bold;
     color: #343434;
@@ -12,50 +9,47 @@ details > summary {
 details > :not(summary) { 
     color: rgb(84, 84, 84);
     margin-top: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    :hover{
+        cursor: default;
+    }
 }
 
-@media (max-width: 1536px){
-    .container{
+
+@media (max-width: 1536px) {
+    .container {
         max-width: 1366px;
     }
 }
 
-@media (max-width: 1366px){
-    .container{
+@media (max-width: 1366px) {
+    .container {
         max-width: 1280px;
     }
 }
 
-@media (max-width: 1280px){
-    .container{
+@media (max-width: 1280px) {
+    .container {
         max-width: 1024px;
     }
 }
 
-@media (max-width: 1024px){
-    .container{
+@media (max-width: 1024px) {
+    .container {
         max-width: 768px;
-        padding-left: 10px;
-        padding-right: 10px;
     }
 }
 
-@media (max-width: 768px){
-    .container{
+@media (max-width: 768px) {
+    .container {
         max-width: 640px;
     }
-    .link{
+    .link, .logo {
         font-size: 20px;
     }
-    .logo{
-        font-size: 20px;
-    }
-    
 }
 
-@media (max-width: 640px){
-    .container{
+@media (max-width: 640px) {
+    .container {
         max-width: 475px;
     }
 }
