@@ -12,8 +12,10 @@
 <body>
     <div class="max-w-screen">
         {{ partial "navbar" .}}
-        {{ block "main" .}}
-        {{ end }}
+        <div class="content">
+            {{ block "main" .}}
+            {{ end }}
+        </div>
         {{ partial "footer" .}}
     </div>
 </body>

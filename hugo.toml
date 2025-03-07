@@ -27,4 +27,8 @@ source = 'hugo_stats.json'
 target = 'assets/notwatching/hugo_stats.json'
 
 [outputs]
-home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "JSON"]
+page = ["HTML"] 
+section = ["HTML", "JSON"]
+taxonomy = ["HTML", "RSS"]
+term = ["HTML", "RSS"]

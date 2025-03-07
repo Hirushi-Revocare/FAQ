@@ -38,22 +38,109 @@
                     fill="#ffffff"></path>
             </g>
         </svg>
-        <input id="search-field" type="text" class="hidden p-2 rounded bg-white h-8" placeholder="Search...">
+        <div class="relative">
+            <input type="text" id="search-field" class="hidden p-2 rounded bg-white h-8" placeholder="Search...">
+            <ul id="search-results"
+                class="absolute bg-white text-black w-full max-h-60 overflow-y-auto hidden whitespace-nowrap"></ul>
+        </div>
     </div>
-</nav>
+    <script>
+        document.getElementById('search-icon').addEventListener('click', function () {
+            var searchField = document.getElementById('search-field');
+            var searchResults = document.getElementById('search-results');
+            if (searchField.classList.contains('hidden')) {
+                searchField.classList.remove('hidden');
+                searchResults.classList.remove('hidden');
+                searchField.focus(); 
+            } else {
+                searchField.classList.add('hidden');
+                searchResults.classList.add('hidden');
+            }
+        });
 
-<script>
-    document.getElementById('search-icon').addEventListener('click', function () {
-        var searchField = document.getElementById('search-field');
-        if (searchField.classList.contains('hidden')) {
-            searchField.classList.remove('hidden');
-        } else {
-            searchField.classList.add('hidden');
+        document.addEventListener('click', function (event) {
+            var searchField = document.getElementById('search-field');
+            var searchResults = document.getElementById('search-results');
+            var searchIcon = document.getElementById('search-icon');
+            if (!searchField.contains(event.target) && !searchIcon.contains(event.target)) {
+                searchField.classList.add('hidden');
+                searchResults.classList.add('hidden');
+            }
+        });
+
+        const input = document.getElementById("search-field");
+        const results = document.getElementById("search-results");
+
+        async function fetchData() {
+            try {
+                const response = await fetch("/index.json");
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                console.log("Response status:", response.status);
+                const responseText = await response.text();
+                console.log("Response text:", responseText);
+                try {
+                    const cleanedResponseText = responseText.replace(/,\s*}/g, '}').replace(/,\s*]/g, ']');
+                    const data = JSON.parse(cleanedResponseText);
+                    console.log("Fetched data:", data);
+                    if (data && data.items) {
+                        console.log("Data items:", data.items);
+                    } else {
+                        console.log("Data items not found");
+                    }
+                    input.addEventListener("input", function () {
+                        const query = input.value.toLowerCase();
+                        results.innerHTML = "";
+                        if (query) {
+                            const filteredItems = data.items.filter(item =>
+                                item.title.toLowerCase().includes(query) ||
+                                item.contents.toLowerCase().includes(query)
+                            );
+                            filteredItems.forEach(item => {
+                                const li = document.createElement("li");
+                                const a = document.createElement("a");
+                                a.href = item.permalink;
+                                a.textContent = item.title;
+                                li.appendChild(a);
+                                results.appendChild(li);
+
+                                const contentMatches = item.contents.match(/<summary>(.*?)<\/summary>/gi);
+                                if (contentMatches) {
+                                    contentMatches.forEach(match => {
+                                        const summaryText = match.replace(/<\/?summary>/g, '').toLowerCase();
+                                        if (summaryText.includes(query)) {
+                                            const contentLi = document.createElement("li");
+                                            const contentA = document.createElement("a");
+                                            contentA.href = item.permalink + '#' + summaryText.replace(/\s+/g, '-');
+                                            contentA.innerHTML = item.title + ' - ' + summaryText.replace(new RegExp(query, 'gi'), match => `<span class="highlight">${match}</span>`);
+                                            contentLi.appendChild(contentA);
+                                            results.appendChild(contentLi);
+                                        }
+                                    });
+                                }
+                            });
+                        }
+                    });
+                } catch (jsonError) {
+                    console.error("Error parsing JSON at position:", jsonError.message);
+                    console.error("Response text causing error:", responseText);
+                }
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
         }
-    });
-</script>
-        
 
+        fetchData();
+    </script>
+    <style>
+        .highlight {
+            background-color: rgb(245, 183, 132);
+        }
+    </style>
+</nav>
+        <div class="content">
+            
 <div class="p-20">
     <div>
         <h1 class="text-5xl font-bold font-sans text-black flex justify-center">
@@ -63,9 +150,46 @@
         </p>
     </div>
     
+    <div class="ml-50">
+        <h2
+            class="flex content-center gap-3 mb-5 hover:text-amber-700 text-xl transition-transform duration-300 hover:translate-y-1">
+            <a href="http://localhost:1313/posts/general/">General FAQs
+            </a>
+        </h2>
+        <hr class="mt-5 mb-6 w-42">
+    </div>
+    
+    <div class="ml-50">
+        <h2
+            class="flex content-center gap-3 mb-5 hover:text-amber-700 text-xl transition-transform duration-300 hover:translate-y-1">
+            <a href="http://localhost:1313/posts/lead-management/">Lead Management Platform FAQs
+            </a>
+        </h2>
+        <hr class="mt-5 mb-6 w-42">
+    </div>
+    
+    <div class="ml-50">
+        <h2
+            class="flex content-center gap-3 mb-5 hover:text-amber-700 text-xl transition-transform duration-300 hover:translate-y-1">
+            <a href="http://localhost:1313/posts/order-related/">Order-Related FAQs
+            </a>
+        </h2>
+        <hr class="mt-5 mb-6 w-42">
+    </div>
+    
+    <div class="ml-50">
+        <h2
+            class="flex content-center gap-3 mb-5 hover:text-amber-700 text-xl transition-transform duration-300 hover:translate-y-1">
+            <a href="http://localhost:1313/posts/security/">Security FAQs
+            </a>
+        </h2>
+        <hr class="mt-5 mb-6 w-42">
+    </div>
+    
 </div>
 
-        <div class="p-20 flex justify-between align-middle bg-gray-950 text-white text-lg">
+        </div>
+        <div class="p-20 justify-between align-middle bg-gray-950 text-white text-lg">
     <div class="block align-middle">
         <p class="text-gray-200">Still need help? Send us a note!</p>
         <p class="text-gray-400">For any further questions, please write us at<br>

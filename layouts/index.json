@@ -1,0 +1,12 @@
+{
+"items": [
+{{- range $index, $page := where .Site.RegularPages.ByDate.Reverse "Type" "not in" (slice "page" "json") -}}
+{{- if $index }},{{ end -}}
+{
+"title": {{ $page.Title | jsonify }},
+"permalink": {{ $page.RelPermalink | jsonify }},
+"contents": {{ $page.Content | jsonify }},
+}
+{{- end -}}
+]
+}
